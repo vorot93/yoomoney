@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = ["yoomoney", "yoomoney-cli"]
+
+[workspace.package]
+repository = "https://github.com/vorot93/yoomoney"
+authors = ["Artem Vorotnikov <artem@vorotnikov.me>"]
+license = "MPL-2.0"
+edition = "2021"

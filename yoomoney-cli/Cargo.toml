@@ -1,0 +1,25 @@
+[package]
+name = "yoomoney-cli"
+version = "0.1.0"
+description = "YooMoney command line tools"
+categories = ["cli"]
+repository.workspace = true
+authors.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+anyhow = "1"
+chrono = { version = "0.4", features = ["serde"] }
+bigdecimal = { version = "0.4", features = ["serde"] }
+clap = { version = "4", features = ["derive", "env"] }
+phonenumber = "0.3"
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+tokio-stream = "0.1"
+tokio-util = { version = "0.7", features = ["full"] }
+toml = "0.7"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+url = "2"
+xdg = "2"
+yoomoney = { version = "0.1", path = "../yoomoney" }
